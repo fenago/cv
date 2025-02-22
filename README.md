@@ -1,1 +1,2 @@
-# Module 2: Arithmatic and Logical Operations
+
+# Face Detection using OpenCV and Streamlit
