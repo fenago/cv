@@ -16,9 +16,11 @@ def detectFaceOpenCVDnn(net, frame):
     blob = cv2.dnn.blobFromImage(frame, 1.0, (300, 300), [104, 117, 123], False, False)
     # Set the blob as input to the model.
     net.setInput(blob)
+
     # Get Detections.
     detections = net.forward()
     return detections
+    
 
 
 # Function for annotating the image with bounding boxes for each detected face.
